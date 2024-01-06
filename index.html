@@ -61,8 +61,28 @@
 						<!-- Work -->
 							<article id = "projects">
 								<h2 class="major">Projects</h2>
+								<h3>BikeBuddy: Senior Year Capstone</h3>
+								<h4><i>Use of: Python, React-Native, AWS (S3, API Gateway, Lambda) </i></h4>
+								<span class="image main"><a href="enlargedBikeBuddy.html"><img src="images/BikeBuddyArch.jpg" alt="" />Enlarge/Enhance</a></span>
+								<span class="image main"><a href="enlargedBikeBuddyMap.html"><img src="images/BikeBuddyMap.png" alt="" height="800" />Enlarge/Enhance</a></span>
+								<p>(TO BE UPDATED) Mobile application that focuses on routes specifically for bikes in Washington, D.C. Python OSMNX library was used to get a base graph representation of the city. API calls to OpenData D.C. Datasets are the utilized in the creation of the graph and weight modificaiton for
+									bike routes returned from out AWS lambda function. Bike lane information is retrieved from OpenData D.C. and bike lanes are overlayed onto our graph which is further reduced to nodes at each intersection.
+									Identifying nearest edges in a graph involved the combination of a hashmap-like data structure with a cKDTree (insertion based on coordinates that allows for O(log(n)) searching on those coordinates) to properly find edges quickly. 
+									Current work is being done that will include weight modification to edges based on crime, safety, and traffic. Bike rack functionality is also actively being worked on, as well as refining the current user experience. 
+								</p>
+								<h3>News App Android</h3>
+								<h4><i>Use of: Kotlin in Android Studio IDE</i></h4>
+								<video width = 560 controls>
+									<source src="video/Demo_Project1.mp4" type="video/mp4">
+								  Your browser does not support the video tag.
+								  </video>
+								<p>News can be obtained through a term search with the choice to filter based on a spcific source and by filtering by category. News can also be obtained through
+									a long click on the google map provided. Finally, news can also be obtained thorugh the current top headlines and category selected. This project utilized the following API: https://newsapi.org/.
+									The app properly works by disabling buttons based on current user behavior and by also removing invalid article results. Shared Preferences properly save the previous location and term searched. 
+									The video above best demonstrates the full user experience of the application.
+								</p>
 								<h3>Straggler Mitigation</h3>
-								<h4><i>Use of: Python, Docker, AWS EC2</i></h4>
+								<h4><i>Use of: Python, Docker, AWS (EC2)</i></h4>
 								<span class="image main"><a href="enlargedStraggler.html"><img src="images/StragglerDiagram.png" alt="" />Enlarge/Enhance</a></span>
 								<p>Distributed ML training using PyTorch and RingAllreduce architecture. Stragglers were simulated and cut out based on varying 
 									conditions of completion and its lag compared to other workers. After aggregation occurs and each local model is updated, 
@@ -73,7 +93,7 @@
 								<span class="image main"><a href="enlargedML.html"><img src="images/machine learning.png" alt="" />Enlarge/Enhance</a><script src="assets/js/script.js"></script></span> 
 								<p>Machine learning project which achieved final 78% accuracy in prediction of the winner of APDA debates. 
 									Decision tree was initially implemented with slightly lower accuracy. 
-									Data was gathered from PDF tabcards and transformed properly using dataframes for feature calculation of the models. </p>
+									Data was gathered from PDF tabcards and transformed properly using dataframes for feature calculation of the models. The final most accurate model used Support Vector Machines. </p>
 								<h3>Database Translation: JSON to SQL</h3>
 								<h4><i>Use of: Python (through JupyterLab), SQLite, LucidChart (ER Diagrams)</i></h4>
 								<span class="image main"><a href="enlargedSQL.html"><img src="images/SQL_GithubEvents.png" alt="" />Enlarge/Enhance</a><script src="assets/js/script.js"></script></span> 
@@ -105,7 +125,7 @@
 						<!-- About -->
 							<article id="resume">
 								<h3> Resume: </h3>
-								<embed src="docs/Resume_AdhamP.pdf" width="550px" height="750px"  />
+								<embed src="docs/AdhamPResume.pdf" width="550px" height="750px"  />
 								<body>
 									<p>Alternative full view <a href="docs/Resume_AdhamP.pdf" target="_blank" rel="noopener noreferrer">here</a>.</p>
 								</body>
